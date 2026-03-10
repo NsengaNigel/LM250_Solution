@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  * {
+    @apply border-slate-800;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-slate-700/50 bg-slate-900/60 backdrop-blur-md;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-emerald {
+    @apply bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent;
+  }
+}
