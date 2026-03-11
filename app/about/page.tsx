@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { ArrowRight, Target, Heart, Lightbulb } from 'lucide-react';
+import { CALENDLY_URL } from '@/lib/constants';
 
 const values = [
   {
@@ -149,12 +149,14 @@ export default function AboutPage() {
           <p className="mt-4 text-slate-400">
             A 30-minute call is all it takes to see if LM250 is the right fit for your business.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
           >
             Book Discovery Call <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

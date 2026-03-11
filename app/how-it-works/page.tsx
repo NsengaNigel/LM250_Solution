@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { ArrowRight, ClipboardList, Plug, Rocket, BarChart3 } from 'lucide-react';
+import { CALENDLY_URL } from '@/lib/constants';
 
 const steps = [
   {
@@ -154,12 +154,14 @@ export default function HowItWorksPage() {
           <p className="mt-4 text-slate-400">
             Book a discovery call and we will have your AI system live before the end of the month.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
           >
             Get Started <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

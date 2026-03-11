@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X, Zap } from 'lucide-react';
-import { navItems } from '@/lib/constants';
+import { navItems, CALENDLY_URL } from '@/lib/constants';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -50,12 +50,14 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Link
-              href="/contact"
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-blue-600/30 transition-all hover:bg-blue-500 hover:shadow-blue-500/40 active:scale-95"
             >
               Book Discovery Call
-            </Link>
+            </a>
           </div>
 
           {/* Mobile toggle */}
@@ -92,13 +94,15 @@ export default function Navbar() {
               })}
             </ul>
             <div className="mt-3 border-t border-slate-700/50 pt-3">
-              <Link
-                href="/contact"
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 className="block w-full rounded-lg bg-blue-600 px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-blue-500 transition-colors"
               >
                 Book Discovery Call
-              </Link>
+              </a>
             </div>
           </div>
         )}

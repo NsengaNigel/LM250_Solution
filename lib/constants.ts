@@ -4,10 +4,11 @@ export const ROI_CONFIG = {
   HOURLY_ADMIN_RATE: 50,
 } as const;
 
+export const CALENDLY_URL = 'https://calendly.com/nigel-lm250solution-lm/30min';
+
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
-  { label: 'ROI Calculator', href: '/roi-calculator' },
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'About', href: '/about' },
 ] as const;

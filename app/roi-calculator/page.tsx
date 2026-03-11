@@ -1,5 +1,6 @@
 import ROICalculator from '@/components/shared/ROI-Calculator';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CALENDLY_URL } from '@/lib/constants';
 
 const guarantees = [
   '3x revenue target based on real client data',
@@ -74,10 +75,18 @@ export default function ROICalculatorPage() {
 
               <div className="rounded-2xl border border-slate-700/50 bg-slate-900/40 p-6">
                 <h3 className="mb-2 font-bold text-white">Not sure about your numbers?</h3>
-                <p className="text-sm text-slate-400">
+                <p className="mb-4 text-sm text-slate-400">
                   Book a discovery call and we will run a free audit of your current pipeline to
                   give you precise projections with no guesswork.
                 </p>
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
+                >
+                  Book Discovery Call <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
