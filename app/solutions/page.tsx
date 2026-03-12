@@ -18,7 +18,7 @@ const solutions = [
     description:
       'Our AI scores every inbound lead in real time so your time goes to prospects who are ready to act, not those who are just browsing.',
     bullets: ['Behavioral intent scoring', 'Automated lead segmentation', 'Real-time CRM sync'],
-    accent: 'blue',
+    accent: 'gold',
   },
   {
     icon: MessageSquareText,
@@ -31,7 +31,7 @@ const solutions = [
       'Multi-channel drip campaigns',
       'Optimal send-time optimization',
     ],
-    accent: 'blue',
+    accent: 'gold',
   },
   {
     icon: CalendarCheck,
@@ -44,7 +44,7 @@ const solutions = [
       'Automated showing confirmations',
       'Smart rescheduling flows',
     ],
-    accent: 'emerald',
+    accent: 'warm',
   },
   {
     icon: FileBarChart,
@@ -53,7 +53,7 @@ const solutions = [
     description:
       'Replace hours of manual reporting with instant dashboards. Market stats, pipeline health, and client summaries generated automatically.',
     bullets: ['Daily performance dashboards', 'Automated CMA generation', 'Pipeline health alerts'],
-    accent: 'emerald',
+    accent: 'warm',
   },
   {
     icon: PhoneCall,
@@ -62,7 +62,7 @@ const solutions = [
     description:
       'Proactively target expired listings, FSBOs, and sphere-of-influence contacts with personalized, timely outreach at scale.',
     bullets: ['Expired & FSBO targeting', 'SOI re-engagement campaigns', 'Market shift alerts'],
-    accent: 'purple',
+    accent: 'warm',
   },
   {
     icon: Users,
@@ -75,28 +75,22 @@ const solutions = [
       'Referral tracking & attribution',
       'Client anniversary campaigns',
     ],
-    accent: 'purple',
+    accent: 'warm',
   },
 ];
 
 const accentStyles = {
-  blue: {
-    badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-    icon: 'bg-blue-600/10 text-blue-400 ring-blue-500/20',
-    bullet: 'bg-blue-500',
-    border: 'hover:border-blue-500/40',
+  gold: {
+    badge: 'bg-gold-500/10 text-gold-400 border-gold-500/20',
+    icon: 'bg-gold-600/10 text-gold-400 ring-gold-500/20',
+    bullet: 'bg-gold-500',
+    border: 'hover:border-gold-500/40',
   },
-  emerald: {
-    badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-    icon: 'bg-emerald-600/10 text-emerald-400 ring-emerald-500/20',
-    bullet: 'bg-emerald-500',
-    border: 'hover:border-emerald-500/40',
-  },
-  purple: {
-    badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-    icon: 'bg-purple-600/10 text-purple-400 ring-purple-500/20',
-    bullet: 'bg-purple-500',
-    border: 'hover:border-purple-500/40',
+  warm: {
+    badge: 'bg-warm-500/10 text-warm-400 border-warm-500/20',
+    icon: 'bg-warm-600/10 text-warm-400 ring-warm-500/20',
+    bullet: 'bg-warm-500',
+    border: 'hover:border-warm-500/40',
   },
 };
 
@@ -106,16 +100,16 @@ export default function SolutionsPage() {
       {/* Header */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/10 blur-3xl" />
         </div>
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold-400">
             <Zap className="h-3.5 w-3.5" />
             Full-Stack AI Solutions
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Everything You Need to{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               Dominate Your Market
             </span>
           </h1>
@@ -176,7 +170,7 @@ export default function SolutionsPage() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
+            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gold-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold-600/25 transition-all hover:bg-gold-500 active:scale-95"
           >
             Book Discovery Call <ArrowRight className="h-4 w-4" />
           </a>

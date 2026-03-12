@@ -22,10 +22,10 @@ const SOLUTIONS = [
 ];
 
 const STATS = [
-  { value: '3x', label: 'Revenue Increase', color: 'text-blue-400' },
-  { value: '70%', label: 'Cost Reduction', color: 'text-emerald-400' },
-  { value: '14 days', label: 'Time to Live', color: 'text-blue-400' },
-  { value: '90-day', label: 'Guarantee', color: 'text-emerald-400' },
+  { value: '3x', label: 'Revenue Increase', color: 'text-gold-400' },
+  { value: '70%', label: 'Cost Reduction', color: 'text-warm-400' },
+  { value: '14 days', label: 'Time to Live', color: 'text-gold-400' },
+  { value: '90-day', label: 'Guarantee', color: 'text-warm-400' },
 ];
 
 export default function HomePage() {
@@ -34,20 +34,20 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-40 left-1/2 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+          <div className="absolute -top-40 left-1/2 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-gold-600/10 blur-3xl" />
         </div>
 
         <div className="mx-auto max-w-4xl px-4 py-24 text-center sm:px-6 sm:py-32 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold-400">
             AI-Powered Real Estate Infrastructure
           </div>
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             The AI Infrastructure That{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               3x&apos;s Realtor Revenue
             </span>{' '}
             While Cutting Costs{' '}
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-warm-400 to-warm-600 bg-clip-text text-transparent">
               70%
             </span>
           </h1>
@@ -62,7 +62,7 @@ export default function HomePage() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 hover:shadow-blue-500/30 active:scale-95"
+              className="flex items-center gap-2 rounded-xl bg-gold-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold-600/25 transition-all hover:bg-gold-500 hover:shadow-gold-500/30 active:scale-95"
             >
               Book Free Discovery Call <ArrowRight className="h-4 w-4" />
             </a>
@@ -71,13 +71,13 @@ export default function HomePage() {
           {/* Social proof */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500">
             <span className="flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-emerald-500" /> No contracts
+              <CheckCircle className="h-4 w-4 text-warm-500" /> No contracts
             </span>
             <span className="flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-emerald-500" /> Live in 14 days
+              <CheckCircle className="h-4 w-4 text-warm-500" /> Live in 14 days
             </span>
             <span className="flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-emerald-500" /> Results or refund
+              <CheckCircle className="h-4 w-4 text-warm-500" /> Results or refund
             </span>
           </div>
 
@@ -126,12 +126,12 @@ export default function HomePage() {
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6 sm:p-8">
-              <h3 className="mb-5 text-lg font-bold text-emerald-400">With LM250</h3>
+            <div className="rounded-2xl border border-warm-500/20 bg-warm-500/5 p-6 sm:p-8">
+              <h3 className="mb-5 text-lg font-bold text-warm-400">With LM250</h3>
               <ul className="space-y-3">
                 {SOLUTIONS.map((s) => (
                   <li key={s} className="flex items-start gap-3 text-sm text-slate-300">
-                    <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" />
+                    <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-warm-400" />
                     {s}
                   </li>
                 ))}
@@ -160,9 +160,9 @@ export default function HomePage() {
               return (
                 <div
                   key={pillar.id}
-                  className="group relative rounded-2xl border border-slate-700/50 bg-slate-900/40 p-6 transition-all hover:border-blue-500/40 hover:bg-slate-900/70 sm:p-8"
+                  className="group relative rounded-2xl border border-slate-700/50 bg-slate-900/40 p-6 transition-all hover:border-gold-500/40 hover:bg-slate-900/70 sm:p-8"
                 >
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400 ring-1 ring-blue-500/20 transition-colors group-hover:bg-blue-600/20">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gold-600/10 text-gold-400 ring-1 ring-gold-500/20 transition-colors group-hover:bg-gold-600/20">
                     <Icon className="h-6 w-6" />
                   </div>
                   <div className="mb-1 text-xs font-semibold uppercase tracking-widest text-slate-500">
@@ -191,7 +191,7 @@ export default function HomePage() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-blue-600/25 transition-all hover:bg-blue-500 hover:shadow-blue-500/30 active:scale-95"
+            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gold-600 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-gold-600/25 transition-all hover:bg-gold-500 hover:shadow-gold-500/30 active:scale-95"
           >
             Book My Free Discovery Call <ArrowRight className="h-5 w-5" />
           </a>

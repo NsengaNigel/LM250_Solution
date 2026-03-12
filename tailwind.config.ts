@@ -13,9 +13,18 @@ const config: Config = {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        brand: {
-          blue: '#2563eb',
-          'blue-light': '#3b82f6',
+        gold: {
+          300: '#CDB87A',
+          400: '#C0A86A',
+          500: '#B4975A',
+          600: '#9A7E48',
+          700: '#7D6639',
+        },
+        warm: {
+          300: '#C0BBB5',
+          400: '#ABA5A0',
+          500: '#918B85',
+          600: '#77716B',
         },
       },
     },

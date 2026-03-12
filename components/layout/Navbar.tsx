@@ -19,11 +19,11 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 shadow-md shadow-blue-600/30 group-hover:bg-blue-500 transition-colors">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gold-600 shadow-md shadow-gold-600/30 group-hover:bg-gold-500 transition-colors">
               <Zap className="h-4 w-4 text-white" />
             </span>
             <span className="text-lg font-bold tracking-tight text-white">
-              LM<span className="text-blue-500">250</span>
+              LM<span className="text-gold-500">250</span>
             </span>
           </Link>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
                     href={item.href}
                     className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                       active
-                        ? 'bg-blue-600/20 text-blue-400'
+                        ? 'bg-gold-600/20 text-gold-400'
                         : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
                     }`}
                   >
@@ -54,7 +54,7 @@ export default function Navbar() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-blue-600/30 transition-all hover:bg-blue-500 hover:shadow-blue-500/40 active:scale-95"
+              className="rounded-lg bg-gold-600 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-gold-600/30 transition-all hover:bg-gold-500 hover:shadow-gold-500/40 active:scale-95"
             >
               Book Discovery Call
             </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
                       onClick={() => setMobileOpen(false)}
                       className={`block rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${
                         active
-                          ? 'bg-blue-600/20 text-blue-400'
+                          ? 'bg-gold-600/20 text-gold-400'
                           : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
                       }`}
                     >
@@ -99,7 +99,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
-                className="block w-full rounded-lg bg-blue-600 px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-blue-500 transition-colors"
+                className="block w-full rounded-lg bg-gold-600 px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-gold-500 transition-colors"
               >
                 Book Discovery Call
               </a>

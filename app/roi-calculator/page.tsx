@@ -14,12 +14,12 @@ export default function ROICalculatorPage() {
       {/* Header */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/10 blur-3xl" />
         </div>
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             See Your{' '}
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-warm-400 to-warm-600 bg-clip-text text-transparent">
               Real Numbers
             </span>
           </h1>
@@ -61,12 +61,12 @@ export default function ROICalculatorPage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6">
+              <div className="rounded-2xl border border-warm-500/20 bg-warm-500/5 p-6">
                 <h3 className="mb-4 font-bold text-white">Our Guarantees</h3>
                 <ul className="space-y-3">
                   {guarantees.map((g) => (
                     <li key={g} className="flex items-start gap-2.5 text-sm text-slate-300">
-                      <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" />
+                      <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-warm-400" />
                       {g}
                     </li>
                   ))}
@@ -83,7 +83,7 @@ export default function ROICalculatorPage() {
                   href={CALENDLY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
+                  className="inline-flex items-center gap-2 rounded-lg bg-gold-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-gold-600/25 transition-all hover:bg-gold-500 active:scale-95"
                 >
                   Book Discovery Call <ArrowRight className="h-4 w-4" />
                 </a>

@@ -69,12 +69,12 @@ export default function HowItWorksPage() {
       {/* Header */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/10 blur-3xl" />
         </div>
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Live in{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               14 Days.
             </span>{' '}
             Results in 30.
@@ -90,14 +90,14 @@ export default function HowItWorksPage() {
       <section className="pb-24 sm:pb-32">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-blue-600/50 via-slate-700 to-transparent md:block" />
+            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-gold-600/50 via-slate-700 to-transparent md:block" />
             <div className="space-y-10">
               {steps.map((step) => {
                 const Icon = step.icon;
                 return (
                   <div key={step.number} className="relative flex gap-6 md:gap-10">
                     <div className="relative z-10 flex-shrink-0">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-blue-500/30 bg-blue-600/10 text-blue-400 shadow-lg shadow-blue-600/10">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gold-500/30 bg-gold-600/10 text-gold-400 shadow-lg shadow-gold-600/10">
                         <Icon className="h-7 w-7" />
                       </div>
                     </div>
@@ -113,7 +113,7 @@ export default function HowItWorksPage() {
                       <ul className="space-y-1.5">
                         {step.deliverables.map((d) => (
                           <li key={d} className="flex items-center gap-2.5 text-sm text-slate-300">
-                            <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-500" />
+                            <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-500" />
                             {d}
                           </li>
                         ))}
@@ -158,7 +158,7 @@ export default function HowItWorksPage() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
+            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gold-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold-600/25 transition-all hover:bg-gold-500 active:scale-95"
           >
             Get Started <ArrowRight className="h-4 w-4" />
           </a>

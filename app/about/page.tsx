@@ -35,12 +35,12 @@ export default function AboutPage() {
       {/* Header */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+          <div className="absolute -top-32 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold-600/10 blur-3xl" />
         </div>
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Built by Operators,{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               for Realtors
             </span>
           </h1>
@@ -55,8 +55,8 @@ export default function AboutPage() {
       {/* Mission */}
       <section className="pb-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 sm:p-12">
-            <p className="text-center text-sm font-semibold uppercase tracking-widest text-blue-400">
+          <div className="rounded-2xl border border-gold-500/20 bg-gold-500/5 p-8 sm:p-12">
+            <p className="text-center text-sm font-semibold uppercase tracking-widest text-gold-400">
               Our Mission
             </p>
             <blockquote className="mt-4 text-center text-2xl font-bold leading-snug text-white sm:text-3xl">
@@ -128,7 +128,7 @@ export default function AboutPage() {
                   key={v.title}
                   className="rounded-2xl border border-slate-700/50 bg-slate-900/40 p-6 sm:p-7"
                 >
-                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400 ring-1 ring-blue-500/20">
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-gold-600/10 text-gold-400 ring-1 ring-gold-500/20">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mb-2 font-bold text-white">{v.title}</h3>
@@ -153,7 +153,7 @@ export default function AboutPage() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 active:scale-95"
+            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gold-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold-600/25 transition-all hover:bg-gold-500 active:scale-95"
           >
             Book Discovery Call <ArrowRight className="h-4 w-4" />
           </a>

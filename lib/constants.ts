@@ -6,6 +6,12 @@ export const ROI_CONFIG = {
 
 export const CALENDLY_URL = 'https://calendly.com/nigel-lm250solution-lm/30min';
 
+export const CONTACT = {
+  email: 'nigel@lm250solution-lm.com',
+  instagram: 'https://www.instagram.com/lm250.solutions/',
+  linkedin: 'https://www.linkedin.com/in/nigel-nsenga-221aa730b',
+} as const;
+
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
