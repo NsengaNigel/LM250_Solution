@@ -1,5 +1,5 @@
 import { ArrowRight, TrendingUp, Scissors, Globe, CheckCircle, Minus } from 'lucide-react';
-import { PILLARS, CALENDLY_URL } from '@/lib/constants';
+import { PILLARS, CALENDLY_URL, DEMO_URL } from '@/lib/constants';
 
 const pillarIcons = { TrendingUp, Scissors, Globe } as const;
 
@@ -84,6 +84,14 @@ export default function HomePage() {
                 Book Free Discovery Call <ArrowRight className="h-4 w-4" />
               </span>
               <span className="absolute inset-0 shimmer-gold" />
+            </a>
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-xl border border-warm-500/25 px-8 py-4 text-sm font-bold tracking-[0.08em] uppercase text-warm-400 transition-all duration-300 hover:border-warm-400/40 hover:text-warm-300 active:scale-[0.97]"
+            >
+              Watch Demo <ArrowRight className="h-4 w-4" />
             </a>
           </div>
 
@@ -236,20 +244,30 @@ export default function HomePage() {
 
           <div className="mx-auto mt-10 divider-gold w-32" />
 
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative mt-10 inline-flex overflow-hidden rounded-xl bg-gradient-to-br from-gold-500 to-gold-600 px-10 py-4 text-sm font-bold tracking-[0.1em] uppercase text-slate-950 shadow-gold-btn transition-all duration-300 hover:from-gold-400 hover:to-gold-500 hover:shadow-gold-lg active:scale-[0.97]"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              Book My Free Discovery Call <ArrowRight className="h-4 w-4" />
-            </span>
-            <span className="absolute inset-0 shimmer-gold" />
-          </a>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex overflow-hidden rounded-xl bg-gradient-to-br from-gold-500 to-gold-600 px-10 py-4 text-sm font-bold tracking-[0.1em] uppercase text-slate-950 shadow-gold-btn transition-all duration-300 hover:from-gold-400 hover:to-gold-500 hover:shadow-gold-lg active:scale-[0.97]"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                Book My Free Discovery Call <ArrowRight className="h-4 w-4" />
+              </span>
+              <span className="absolute inset-0 shimmer-gold" />
+            </a>
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-xl border border-warm-500/25 px-8 py-4 text-sm font-bold tracking-[0.1em] uppercase text-warm-400 transition-all duration-300 hover:border-warm-400/40 hover:text-warm-300 active:scale-[0.97]"
+            >
+              Watch Demo <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
 
-          <p className="mt-4 text-xs text-slate-600 tracking-wide">
-            Opens Calendly · 30 min · Zero commitment
+          <p className="mt-5 text-xs text-slate-600 tracking-wide">
+            Book · 30 min · Zero commitment
           </p>
         </div>
       </section>

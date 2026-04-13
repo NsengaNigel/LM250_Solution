@@ -5,6 +5,7 @@ export const ROI_CONFIG = {
 } as const;
 
 export const CALENDLY_URL = 'https://calendly.com/nigel-lm250solution-lm/30min';
+export const DEMO_URL = 'https://form.typeform.com/to/JlqtuyZx';
 
 export const CONTACT = {
   email: 'nigel@lm250solution-lm.com',

@@ -1,5 +1,5 @@
 import { ArrowRight, ClipboardList, Plug, Rocket, BarChart3 } from 'lucide-react';
-import { CALENDLY_URL } from '@/lib/constants';
+import { CALENDLY_URL, DEMO_URL } from '@/lib/constants';
 
 const steps = [
   {
@@ -154,14 +154,24 @@ export default function HowItWorksPage() {
           <p className="mt-4 text-slate-400">
             Book a discovery call and we will have your AI system live before the end of the month.
           </p>
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gold-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold-600/25 transition-all hover:bg-gold-500 active:scale-95"
-          >
-            Get Started <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-gold-500 px-7 py-3.5 text-sm font-bold tracking-wide text-slate-950 shadow-gold-btn transition-all hover:bg-gold-400 hover:shadow-gold-md active:scale-95"
+            >
+              Get Started <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border border-warm-500/25 px-7 py-3.5 text-sm font-bold tracking-wide text-warm-400 transition-all hover:border-warm-400/40 hover:text-warm-300 active:scale-95"
+            >
+              Watch Demo <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </section>
     </div>

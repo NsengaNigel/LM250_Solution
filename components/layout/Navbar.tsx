@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { navItems, CALENDLY_URL } from '@/lib/constants';
+import { navItems, CALENDLY_URL, DEMO_URL } from '@/lib/constants';
 
 export default function Navbar() {
   const pathname  = usePathname();
@@ -67,7 +67,15 @@ export default function Navbar() {
           </ul>
 
           {/* ── CTA ───────────────────────────────────── */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2">
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-semibold tracking-[0.1em] uppercase text-warm-500 transition-colors hover:text-warm-300"
+            >
+              Watch Demo
+            </a>
             <a
               href={CALENDLY_URL}
               target="_blank"
@@ -112,6 +120,15 @@ export default function Navbar() {
               })}
             </ul>
             <div className="divider-gold mb-4" />
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="mb-2 block w-full rounded-lg border border-warm-500/20 bg-transparent px-4 py-2.5 text-center text-xs font-semibold tracking-[0.12em] uppercase text-warm-500 transition-colors hover:text-warm-300"
+            >
+              Watch Demo
+            </a>
             <a
               href={CALENDLY_URL}
               target="_blank"
